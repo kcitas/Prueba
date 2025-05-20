@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+	<style>
+	    body {
+	        background: linear-gradient(135deg, #001f3d, #0a0a0a); /* Fondo azul oscuro y gris oscuro */
+	        font-family: 'Arial', sans-serif;
+	        color: #ffffff;
+	        text-align: center;
+	        padding: 50px;
+	    }
+
+	    h1 {
+	        color: #1e88e5; /* Azul brillante */
+	        margin-bottom: 30px;
+	    }
+
+	    .btn-custom {
+	        font-size: 1.1rem;
+	        padding: 12px 20px;
+	        border-radius: 5px;
+	        text-decoration: none;
+	        font-weight: bold;
+	        margin: 0 10px; /* espacio entre botones */
+	    }
+
+	    .btn-register {
+	        background-color: #1976d2; /* Azul intermedio */
+	        color: white;
+	    }
+
+	    .btn-register:hover {
+	        background-color: #1565c0; /* Azul más oscuro */
+	    }
+
+	    .btn-show {
+	        background-color: #2c3e50; /* Gris azulado oscuro */
+	        color: white;
+	    }
+
+	    .btn-show:hover {
+	        background-color: #1c2833; /* Gris más oscuro */
+	    }
+
+	    .container {
+	        max-width: 600px;
+	        margin: 0 auto;
+	    }
+
+	    .btn-row {
+	        display: flex;
+	        justify-content: center;
+	        gap: 20px;
+	        flex-wrap: wrap;
+	        margin-top: 20px;
+	    }
+	</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido al sistema de registro de equipos</h1>
+        <div class="btn-row">
+            <a href="/verequipo/formequipo" class="btn btn-custom btn-register">
+                <i class="fas fa-plus-circle"></i> Registrar un nuevo equipo
+            </a>
+            <a href="/show" class="btn btn-custom btn-show">
+                <i class="fas fa-eye"></i> Ver equipos registrados
+            </a>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
